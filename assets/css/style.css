@@ -14,8 +14,8 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: #3a3a3a
-    /* font-family: 'Open Sans', sans-serif; */
+    color: #3a3a3a;
+    font-family: 'Lato', sans-serif;
     }
 
 /* header */
@@ -23,7 +23,10 @@ header {
     background-color: lightcoral;
 }
 
-/* main */
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+/* main content*/
 main {
     background-color: lightblue;
     /* make main take all available space and push the footer down*/
