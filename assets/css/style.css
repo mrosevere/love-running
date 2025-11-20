@@ -52,7 +52,22 @@ menu > li {
 }
 
 .active {
-    border-bottom: 1px solid #3a3a3a;
+    /* border-bottom: 1px solid #3a3a3a; */
+    text-decoration: underline;
+}
+
+/* Nav bar styles with dropdown toggle */
+nav {
+    /* fix nav bar to top of page */
+    position: absolute;
+    /* Set background-color to match header now the position is absolute*/
+    background-color: #ffffff;
+    /* add style to nav bar */
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
 }
 
 /* main content*/
