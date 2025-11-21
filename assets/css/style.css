@@ -204,6 +204,19 @@ main {
     color: #fafafa;
 }
 
+/* Gallery Page */
+#photos img {
+    /* Set width to remove any overflow - all photos will be fully visible */
+    width: 100%;
+    /* Add line height to give ALT text enough space */
+    line-height: 1em;
+}
+
+#photos {
+    /* Set line height to 0 to remove the white space between pictures */
+    line-height: 0;
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
