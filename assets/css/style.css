@@ -89,12 +89,18 @@ nav {
 
 /* main content*/
 main {
-    background-color: lightblue;
     /* make main take all available space and push the footer down*/
     flex: 1 0 auto;
     /* Push content down by the hight of the header so it displays below fixed header */
     /* A sticky flexbox may be more dynamic here */
     margin-top: 47px;
+}
+
+/* hero section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
 /* footer */
