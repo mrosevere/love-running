@@ -277,7 +277,7 @@ main {
 }
 
 /* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
 
     /* Header */
     nav {
@@ -341,7 +341,28 @@ main {
         column-count: 3;
     }
 
+    /* Signup Section */
+    #signup {
+        /* Centre the background image of the signup section */
+        background-position: center;
+        position: relative;
+    }
 
+    #signup-form {
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 150;
+    }
+
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
