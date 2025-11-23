@@ -68,17 +68,22 @@
           <label for="email-address">Email Address</label>
           <input type="email" name="email-address" id="email-address" required>
           <br>
+          <div class="readio-buttons">
           <!-- Running Preference Radio buttons -->
-          <input type="radio" name="running-preference" id="road" value="road">
-          <label for="road">Road</label>
-          <br>
-          <input type="radio" name="running-preference" id="trail" value="trail">
-          <label for="trail">Trail</label>
-          <br>
-          <input type="radio" name="running-preference" id="both" value="both">
-          <label for="both">Both</label>
-          <br>
-          <input type="submit" class="join-button">
+            <div>
+              <label for="road">Road</label>
+              <input type="radio" name="running-preference" id="road" value="road" required checked>
+            </div>
+            <div>
+              <label for="trail">Trail</label>
+              <input type="radio" name="running-preference" id="trail" value="trail" required>
+            </div>
+            <div>
+              <label for="both">Both</label>
+              <input type="radio" name="running-preference" id="both" value="both" required>
+            </div>
+          </div>
+          <button type="submit" class="join-button">Let's Run!</button>
         </form>
       </section>
     </main>
