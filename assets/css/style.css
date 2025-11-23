@@ -93,6 +93,9 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+    /* Set flexbox properties on main so its content can use flexbox child properties. */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Hero section */
@@ -218,6 +221,52 @@ main {
     color: #3a3a3a;
 }
 
+/* Sign Up Section */
+#signup {
+    background-image: url(../images/signup-image.webp);
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+
+#signup-form {
+    padding: 30px;
+    color: #ffffff;
+    background-color: rgba(60, 60, 60, 0.6);
+    padding: 30px;
+}
+
+#signup-form > h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+.radio-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #454b1b;
+    color: #fafafa;
+}
 
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
@@ -261,6 +310,7 @@ main {
     main {
         /* Push main content down to accommodate larger header */
         margin-top: 79px;
+        /*  */
     }
 
     /* Hero */
@@ -290,6 +340,7 @@ main {
     #photos {
         column-count: 3;
     }
+
 
 }
 
